@@ -39,7 +39,7 @@ body {
 .avatar-wrapper {
   position: absolute;
   top: 50px;
-  left: 43%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
