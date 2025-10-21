@@ -3,111 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adeniyi Adejare | Profile Card</title>
+    <title>Adejare Adeniyi – Profile Card</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <article data-testid="test-profile-card" class="profile-card">
-        <div class="profile-header"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        <figure class="avatar-wrapper">
-          <img
-            src="pelz.JPG"
-            alt="Adeniyi Adejare Profile Photo"
-            data-testid="test-user-avatar"
-          />
-        </figure>
+    <article data-testid="test-profile-card">
+      <figure>
+        <img
+          src="pelz.JPG"
+          alt="Adejare Adeniyi"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+      <header>
+        <h2 data-testid="test-user-name">Adejare Adeniyi</h2>
+      </header>
+      <p data-testid="test-user-bio">
+        Political Scientist • Frontend Developer • Graphic Designer • Founder of
+        Pelznotion Printing Hub.
+      </p>
+      <p data-testid="test-user-time" id="current-time"></p>
 
-        <header>
-          <h2 data-testid="test-user-name">Adeniyi Adejare</h2>
-          <p class="location">Lagos, Nigeria</p>
-          <p class="role">Graphic Designer & Frontend Developer</p>
-        </header>
-
-        <p data-testid="test-user-bio" class="bio">
-          Creative designer and developer passionate about crafting beautiful,
-          functional digital experiences. Owner of Pelznotion Printing Hub.
-        </p>
-
-        <p class="time">
-          Current Time (ms):
-          <span data-testid="test-user-time"></span>
-        </p>
-
-        <nav
-          data-testid="test-user-social-links"
-          aria-label="Social Media Links"
-          class="social-links"
+      <nav data-testid="test-user-social-links" class="social-links">
+        <a
+          href="https://x.com/pelumi_adejare?s=21"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="test-user-social-twitter"
+          >Twitter</a
         >
+        <a
+          href="https://www.instagram.com/pelznotion_printing_hub?igsh=MWt4cGtzOGdrcGRzaw%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="test-user-social-instagram"
+          >Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com/in/adejare-adeniyi"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="test-user-social-linkedin"
+          >LinkedIn</a
+        >
+      </nav>
+
+      <div class="info-sections">
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
           <ul>
-            <li>
-              <a
-                href="https://www.instagram.com/pelznotion_printing_hub?igsh=MWt4cGtzOGdrcGRzaw%3D%3D&utm_source=qr"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-instagram"
-                aria-label="Instagram"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
-                  alt="Instagram"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://x.com/pelumi_adejare?s=21"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-twitter"
-                aria-label="Twitter"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-                  alt="Twitter"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/adejare-adeniyi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-linkedin"
-                aria-label="LinkedIn"
-              >
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733561.png"
-                  alt="LinkedIn"
-                />
-              </a>
-            </li>
+            <li>Designing</li>
+            <li>Coding</li>
+            <li>Football</li>
+            <li>Photography</li>
           </ul>
-        </nav>
+        </section>
 
-        <div class="info-sections">
-          <section>
-            <h3>Hobbies</h3>
-            <ul data-testid="test-user-hobbies">
-              <li>Designing</li>
-              <li>Coding</li>
-              <li>Football</li>
-              <li>Photography</li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Dislikes</h3>
-            <ul data-testid="test-user-dislikes">
-              <li>Procrastination</li>
-              <li>Poor UI design</li>
-              <li>Negative energy</li>
-            </ul>
-          </section>
-        </div>
-      </article>
-    </main>
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Procrastination</li>
+            <li>Poor UI design</li>
+            <li>Negative energy</li>
+          </ul>
+        </section>
+      </div>
+    </article>
 
     <script src="script.js"></script>
   </body>

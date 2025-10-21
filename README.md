@@ -1,27 +1,39 @@
-# Adeniyi Adejare | Profile Card
+# Frontend Wizards — Stage 1: Multi-Page Profile Site
 
-A responsive profile card showcasing basic user information, hobbies, and dislikes — built with **HTML**, **CSS**, and **JavaScript**.  
-The project is designed to be **lightweight**, **accessible**, and **fully responsive** across all devices.
+## Overview
+
+This project is part of the **Frontend Wizards Program**, Stage 1.  
+It builds upon my Stage 0 “Profile Card” by expanding into a **multi-page application** with semantic, accessible, and responsive design.
+
+### Pages
+
+1. **Home (`index.html`)** — The original profile card.
+2. **About Me (`about.html`)** — Reflections, goals, and personal notes.
+3. **Contact Us (`contact.html`)** — A contact form with HTML + JS validation.
 
 ---
 
 ## Features
 
-- **Responsive Design** – Adjusts seamlessly for mobile, tablet, and desktop views
-- **Modern Layout** – Clean UI with smooth hover effects
-- **Dynamic Time Display** – Automatically updates current time every second
-- **Social Links** – Clickable and accessible links to Instagram, Twitter, and LinkedIn
-- **Organized Structure** – Easy to read and modify for other users or developers
+- Semantic, accessible HTML structure
+- Fully responsive layout (mobile / tablet / desktop)
+- Data-testid attributes for automated testing
+- Form validation with helpful error and success messages
+- Consistent navigation across all pages
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-- **HTML5**
-- **CSS3**
-- **Vanilla JavaScript (ES6)**
-- **Flaticon** (for social icons)
+- **HTML5** for structure
+- **CSS3 (Flexbox & Media Queries)** for layout and responsiveness
+- **Vanilla JavaScript (ES6)** for dynamic behavior and form validation
 
 ---
 
-## Folder Structure
+## How to Run Locally
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/pelznotion/Profile-card.git
+   ```

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Frontend Wizards Stage 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form id="contact-form">
+        <h2>Contact Us</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" data-testid="test-contact-name" required />
+        <p
+          class="error"
+          id="error-name"
+          data-testid="test-contact-error-name"
+        ></p>
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          data-testid="test-contact-email"
+          required
+        />
+        <p
+          class="error"
+          id="error-email"
+          data-testid="test-contact-error-email"
+        ></p>
+
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          data-testid="test-contact-subject"
+          required
+        />
+        <p
+          class="error"
+          id="error-subject"
+          data-testid="test-contact-error-subject"
+        ></p>
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="4"
+          data-testid="test-contact-message"
+          required
+        ></textarea>
+        <p
+          class="error"
+          id="error-message"
+          data-testid="test-contact-error-message"
+        ></p>
+
+        <button type="submit" data-testid="test-contact-submit">
+          Send Message
+        </button>
+        <p id="success" class="success" data-testid="test-contact-success"></p>
+      </form>
+
+      <div class="center">
+        <a class="btn" href="index.html">⬅️ Back to Home</a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
